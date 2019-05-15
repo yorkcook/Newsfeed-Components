@@ -26,4 +26,9 @@ class Article {
 
 */
 
-let articles;
+let articles = Array.from(document.querySelectorAll('.article'));
+
+articles.forEach(article => {
+  const articleInstance = new Article(article)
+})
+
